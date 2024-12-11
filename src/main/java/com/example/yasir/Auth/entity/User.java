@@ -1,13 +1,10 @@
 package com.example.yasir.Auth.entity;
 
 import jakarta.persistence.*;
-import org.hibernate.annotations.CreationTimestamp;
-import org.hibernate.annotations.UpdateTimestamp;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import java.util.Collection;
-import java.util.Date;
 import java.util.List;
 
 @Table(name = "users")
@@ -16,10 +13,12 @@ public class User implements UserDetails {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(nullable = false)
-    private Integer id;
+    private Long id;
 
     @Column(nullable = false)
-    private String fullName;
+    private String firstName;
+    @Column(nullable = false)
+    private String lastName;
 
     @Column(unique = true, length = 100, nullable = false)
     private String email;
@@ -27,13 +26,20 @@ public class User implements UserDetails {
     @Column(nullable = false)
     private String password;
 
-    @CreationTimestamp
-    @Column(updatable = false, name = "created_at")
-    private Date createdAt;
 
-    @UpdateTimestamp
-    @Column(name = "updated_at")
-    private Date updatedAt;
+    @Column(nullable = false)
+    private String phoneNumber;
+
+    @Column(nullable = false)
+    private String civilId;
+//
+//    @CreationTimestamp
+//    @Column(updatable = false, name = "created_at")
+//    private Date createdAt;
+//
+//    @UpdateTimestamp
+//    @Column(name = "updated_at")
+//    private Date updatedAt;
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
@@ -73,21 +79,14 @@ public class User implements UserDetails {
         return true;
     }
 
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
-    public String getFullName() {
-        return fullName;
-    }
-
-    public void setFullName(String fullName) {
-        this.fullName = fullName;
-    }
 
     public String getEmail() {
         return email;
@@ -97,19 +96,36 @@ public class User implements UserDetails {
         this.email = email;
     }
 
-    public Date getCreatedAt() {
-        return createdAt;
+
+    public String getFirstName() {
+        return firstName;
     }
 
-    public void setCreatedAt(Date createdAt) {
-        this.createdAt = createdAt;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
 
-    public Date getUpdatedAt() {
-        return updatedAt;
+    public String getLastName() {
+        return lastName;
     }
 
-    public void setUpdatedAt(Date updatedAt) {
-        this.updatedAt = updatedAt;
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }
+
+    public String getCivilId() {
+        return civilId;
+    }
+
+    public void setCivilId(String civilId) {
+        this.civilId = civilId;
     }
 }

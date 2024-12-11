@@ -30,7 +30,10 @@ public class AuthenticationService {
     // add a user response
     public User signup(RegisterRequest input) {
         User user = new User();
-        user.setFullName(input.getFullName());
+        user.setFirstName(input.getFirstName());
+        user.setLastName(input.getLastName());
+        user.setCivilId(input.getCivilId());
+        user.setPhoneNumber(input.getPhoneNumber());
         user.setEmail(input.getEmail());
         user.setPassword(passwordEncoder.encode(input.getPassword()));
 
