@@ -74,4 +74,16 @@ public class VehicleEntity {
     public void setPrice(Double price) {
         this.price = price;
     }
+
+    @Override
+    public String toString() {
+        return "{" +
+                "id=" + id +
+                ", type=" + type +
+                ", brand='" + brand + '\'' +
+                ", model='" + model + '\'' +
+                ", year='" + year + '\'' +
+                ", price=" + price +
+                '}';
+    }
 }

@@ -1,7 +1,10 @@
 package com.example.yasir.OpenAi.service;
 
+import com.example.yasir.Vehicles.entity.VehicleEntity;
+import com.example.yasir.Vehicles.service.VehicleService;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
@@ -11,52 +14,62 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 @Service
 public class OpenAIService {
-
     private final String API_URL = "https://api.openai.com/v1/chat/completions";
-    private final String instructions = "\n" +
-            "\"In Kuwait, analyze all Ford, Chevrolet, Toyota, GMC, and Mercedes cars available to determine the best car to buy or finance under these conditions:\n" +
-            "\n" +
-            "I want you to take in these answers and make a shortlist of what cars that could fit the budget\n" +
-            "\n" +
-            "Down payment: \n" +
-            "\n" +
-            "Desired monthly installments: \n" +
-            "\n" +
-            "Total family size: ? (including myself)\n" +
-            "\n" +
-            "Main purpose of the car: (e.g., daily commuting, family trips, or off-road use)\n" +
-            "\n" +
-            "Zero-interest financing\n" +
-            "\n" +
-            "\n" +
-            "Consider the following factors:\n" +
-            "\n" +
-            "MSRP\n" +
-            "\n" +
-            "\n" +
-            "\n" +
-            "Main purpose of the car\n" +
-            "\n" +
-            "Fuel efficiency, maintenance costs, and resale value\n" +
-            "\n" +
-            "Availability and market demand in Kuwait\n" +
-            "\n" +
-            "\n" +
-            "The installment period should be calculated based on the desired monthly installment amount, with zero-interest financing in mind. Recommend only one car and structure the response as follows:\n" +
-            "\n" +
-            "Car Name:\n" +
-            "MSRP Cost:\n" +
-            "Reasons: (Provide concise and clear reasons without citing sources.)\"";
+
+    @Autowired
+    private VehicleService vehicleService;
+
     @Value("${openai.api.key}")
     private String API_KEY;
 
     public Map<String, String> getChatGPTResponse(String prompt) {
+        // Retrieve and format vehicle list
+        List<VehicleEntity> vehicles = vehicleService.getAllVehicles();
 
-        System.out.println("API KEY : " + API_KEY);
+        // Convert vehicle list to a formatted string
+        String vehicleListString = vehicles.stream()
+                .map(VehicleEntity::toString) // Ensure VehicleEntity has a meaningful toString method
+                .collect(Collectors.joining(", "));
+
+        // Create instructions with vehicle list
+        String instructions = "\"In Kuwait, analyze the following cars: " + vehicleListString + ". Your task is to determine the best car to buy or finance under these conditions:\n" +
+                "\n" +
+                "- Only consider the cars listed above.\n" +
+                "- Look up any missing features not provided in the list. dont change the price of the car that is the list only take the msrp price from the list  \n" +
+                "\n" +
+//                Brand:Toyota|
+//                Model:Land Cruise|
+//        Year:2025|
+//                Price:21000|
+                "Please evaluate based on the following criteria:\n" +
+                "- Down payment\n" +
+                "- Desired monthly installments\n" +
+                "- Total family size (including myself)\n" +
+                "- Main purpose of the car (e.g., daily commuting, family trips, off-road use)\n" +
+                "- Zero-interest financing\n" +
+                "\n" +
+                "Consider these factors:\n" +
+//                "- MSRP\n" +
+                "- Main purpose of the car\n" +
+                "- Fuel efficiency, maintenance costs, resale value\n" +
+                "- Availability and market demand in Kuwait\n" +
+//                "-All prices should be in Kuwaiti dinars and not in dollars. if the price isnt found in kuwaiti dinar take the USD price and change it to KWD \n" +
+                "\n" +
+                "Calculate the installment period based on the desired monthly installment with zero-interest financing. Recommend only one car and provide details as follows:\n" +
+
+                "- Return only these information below\n" +
+                "- id\n" +
+                "- Car Name\n" +
+                "- Price\n" +
+                "- Reasons for recommendation (concise and clear, without citing sources)\"\n";
+
+        System.out.println(instructions);
 
         RestTemplate restTemplate = new RestTemplate();
 
@@ -64,7 +77,6 @@ public class OpenAIService {
         HttpHeaders headers = new HttpHeaders();
         headers.set("Authorization", "Bearer " + API_KEY);
         headers.set("Content-Type", "application/json");
-//        headers.set("OpenAI-Beta", "assistants=v2");
 
         // Prepare request body
         Map<String, Object> requestBody = new HashMap<>();
@@ -74,7 +86,6 @@ public class OpenAIService {
                 Map.of("role", "user", "content", prompt)
         };
         requestBody.put("messages", messageBody);
-//        requestBody.put("assistant", "asst_F3off8AKu84mIetJv5BEQBsz");
 
         HttpEntity<Map<String, Object>> entity = new HttpEntity<>(requestBody, headers);
 
