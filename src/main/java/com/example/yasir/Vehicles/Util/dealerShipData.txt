@@ -1,0 +1,21 @@
+name:Alghanim|
+address:Shuwaikh Showroom and Service Center Shuwaikh Industrial- Airport Road|
+email:info@fordalghanim.com|
+phoneNumber:+965 189 8900|
+,
+name:AlSayer|
+address:4- Kuwait City 50000|
+email:none|
+phoneNumber:1803 803|
+,
+name:Behbehani|
+address:Building 64- Block 1- 9 St. Shuwaikh Industrial|
+email:none|
+phoneNumber:1870 870|
+,
+name:Al Mulla|
+address:Plot No. 112 Street 9- Shuwaikh Industrial|
+email:none|
+phoneNumber:1887 888|
+,
+
