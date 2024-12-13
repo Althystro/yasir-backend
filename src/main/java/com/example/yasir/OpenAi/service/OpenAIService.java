@@ -29,7 +29,7 @@ public class OpenAIService {
     private String API_KEY;
 
     public Map<String, String> getChatGPTResponse(String prompt) {
-        // Retrieve and format vehicle listdw
+        // Retrieve and format vehicle list
         List<VehicleEntity> vehicles = vehicleService.getAllVehicles();
 
         // Convert vehicle list to a formatted string
@@ -38,38 +38,32 @@ public class OpenAIService {
                 .collect(Collectors.joining(", "));
 
         // Create instructions with vehicle list
-        String instructions = "\"In Kuwait, analyze the following cars: " + vehicleListString + ". Your task is to determine the best car to buy or finance under these conditions:\n" +
+        String instructions = "In Kuwait, analyze the following cars: " + vehicleListString + ". Determine the best car to buy or finance under these conditions:\n" +
                 "\n" +
+                "### Conditions:\n" +
                 "- Only consider the cars listed above.\n" +
-                "- Look up any missing features not provided in the list. dont change the price of the car that is the list only take the msrp price from the list  \n" +
+                "- Use the car prices provided in the list (do not modify them).\n" +
+                "- Evaluate based on:\n" +
+                "  - Current salary.\n" +
+                "  - Financial obligations.\n" +
+                "  - Down payment amount.\n" +
+                "  - Desired monthly installments.\n" +
+                "  - Total family size (including myself).\n" +
+                "  - Main purpose of the car (e.g., commuting, family trips, off-road use).\n" +
+                "  - Zero-interest financing.\n" +
                 "\n" +
-//                Brand:Toyota|
-//                Model:Land Cruise|
-//        Year:2025|
-//                Price:21000|
-                "Please evaluate based on the following criteria:\n" +
-                "- Down payment\n" +
-                "- Desired monthly installments\n" +
-                "- Total family size (including myself)\n" +
-                "- Main purpose of the car (e.g., daily commuting, family trips, off-road use)\n" +
-                "- Zero-interest financing\n" +
+                "### Calculations:\n" +
+                "1. **Monthly Installments** = (Price of Car - Down Payment) / Desired Installment Period (Months)\n" +
+                "2. **Allowed Monthly Installments** = 40% of Salary - Financial Obligations\n" +
+                "3. Only recommend cars where Monthly Installments ≤ Allowed Monthly Installments.\n" +
                 "\n" +
-                "Consider these factors:\n" +
-//                "- MSRP\n" +
-                "- Main purpose of the car\n" +
-                "- Fuel efficiency, maintenance costs, resale value\n" +
-                "- Availability and market demand in Kuwait\n" +
-//                "-All prices should be in Kuwaiti dinars and not in dollars. if the price isnt found in kuwaiti dinar take the USD price and change it to KWD \n" +
-                "\n" +
-                "Calculate the installment period based on the desired monthly installment with zero-interest financing. Recommend only one car and provide details as follows:\n" +
-
-                "- Return only these information below\n" +
-                "- id\n" +
-                "- Car Name\n" +
-                "- Price\n" +
-                "- Reasons for recommendation (concise and clear, without citing sources)\"\n";
-
-        System.out.println(instructions);
+                "### Recommendations:\n" +
+                "For each car that fits the criteria, only return in the format below dont add thing else:\n" +
+                " id:\n" +
+                " Car Name:\n" +
+                " Monthly Installments:\n" +
+                " Price:\n" +
+                " Reasons for recommendation: (clear and concise).\n";
 
         RestTemplate restTemplate = new RestTemplate();
 
@@ -99,15 +93,50 @@ public class OpenAIService {
             JsonNode jsonNode = mapper.readTree(response.getBody());
             String content = jsonNode.path("choices").get(0).path("message").path("content").asText();
 
-            // Prepare JSON response
-            Map<String, String> jsonResponse = new HashMap<>();
-            jsonResponse.put("response", content);
+            // Parse content from plain text response
+            Map<String, String> parsedResponse = parseResponse(content);
 
-            return jsonResponse;
+            return parsedResponse; // Return extracted details as a map
+
         } catch (Exception e) {
             Map<String, String> errorResponse = new HashMap<>();
-            errorResponse.put("response", "Error: " + e.getMessage());
+            errorResponse.put("id", "");
+            errorResponse.put("carName", "");
+            errorResponse.put("price", "");
+            errorResponse.put("installments", "");
+            errorResponse.put("reasons", "Error: " + e.getMessage());
             return errorResponse;
         }
+    }
+
+    private Map<String, String> parseResponse(String response) {
+        Map<String, String> result = new HashMap<>();
+
+        for (String line : response.split("\n")) {
+            String[] parts = line.split(": ", 2);
+            if (parts.length == 2) {
+                switch (parts[0].trim()) {
+                    case "id":
+                        result.put("id", parts[1].trim());
+                        break;
+                    case "Car Name":
+                        result.put("carName", parts[1].trim());
+                        break;
+                    case "Monthly Installments":
+                        result.put("installments", parts[1].trim());
+                        break;
+                    case "Price":
+                        result.put("price", parts[1].trim());
+                        break;
+                    case "Reasons for recommendation":
+                        result.put("reasons", parts[1].trim());
+                        break;
+                    default:
+                        break;
+                }
+            }
+        }
+
+        return result;
     }
 }
