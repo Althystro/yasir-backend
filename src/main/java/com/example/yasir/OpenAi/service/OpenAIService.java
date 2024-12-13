@@ -29,7 +29,7 @@ public class OpenAIService {
     private String API_KEY;
 
     public Map<String, String> getChatGPTResponse(String prompt) {
-        // Retrieve and format vehicle list
+        // Retrieve and format vehicle listdw
         List<VehicleEntity> vehicles = vehicleService.getAllVehicles();
 
         // Convert vehicle list to a formatted string
