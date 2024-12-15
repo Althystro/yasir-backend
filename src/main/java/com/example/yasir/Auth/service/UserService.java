@@ -22,4 +22,10 @@ public class UserService {
 
         return users;
     }
+
+    public User updateProfile(User user, String address, String phoneNumber){
+        user.setAddress(address);
+        user.setPhoneNumber(phoneNumber);
+        return userRepository.save(user);
+    }
 }

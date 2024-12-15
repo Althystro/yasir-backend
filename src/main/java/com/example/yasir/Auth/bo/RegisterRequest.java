@@ -6,6 +6,7 @@ public class RegisterRequest {
     private String firstName;
     private String lastName;
     private String civilId;
+    private String address = "";
     private String phoneNumber;
     private String email;
     private String password;
@@ -58,4 +59,11 @@ public class RegisterRequest {
         this.password = password;
     }
 
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
 }
