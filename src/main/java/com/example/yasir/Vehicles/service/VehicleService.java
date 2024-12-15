@@ -7,4 +7,6 @@ import java.util.ArrayList;
 public interface VehicleService {
 
     public ArrayList<VehicleEntity> getAllVehicles();
+
+    public VehicleEntity getSingleVehicle(Long id);
 }

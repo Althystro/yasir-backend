@@ -1,4 +1,4 @@
-package com.example.yasir.payments.service;
-
-public interface FinancerService {
-}
+//package com.example.yasir.payments.service;
+//
+//public interface FinancerService {
+//}
