@@ -26,6 +26,8 @@ public class User implements UserDetails {
     @Column(nullable = false)
     private String password;
 
+    @Column(nullable = true)
+    private String address;
 
     @Column(nullable = false)
     private String phoneNumber;
@@ -127,5 +129,13 @@ public class User implements UserDetails {
 
     public void setCivilId(String civilId) {
         this.civilId = civilId;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
     }
 }
