@@ -27,6 +27,12 @@ public class VehicleEntity {
     @Column(nullable = false)
     private Double price;
 
+    @Column(nullable = false)
+    private String image;
+
+    @Column(nullable = false)
+    private String image2;
+
     public Long getId() {
         return id;
     }
@@ -73,6 +79,22 @@ public class VehicleEntity {
 
     public void setPrice(Double price) {
         this.price = price;
+    }
+
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
+    }
+
+    public String getImage2() {
+        return image2;
+    }
+
+    public void setImage2(String image2) {
+        this.image2 = image2;
     }
 
     @Override

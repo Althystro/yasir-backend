@@ -36,7 +36,7 @@ public class UserController {
         return ResponseEntity.ok(users);
     }
 
-    @PostMapping("/me")
+    @PutMapping("/me")
     public ResponseEntity<User> updateProfile(@RequestBody UpdateProfileRequest profileRequest){
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
 
