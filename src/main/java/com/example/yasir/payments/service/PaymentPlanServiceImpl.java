@@ -15,7 +15,7 @@ public class PaymentPlanServiceImpl implements PaymentPlanService{
     private PaymentPlanRepository paymentPlanRepository;
 
     public PaymentPlanResponse createPaymentPlan(Long customerId, Long vehicleId, Long financerId, int lengthMonths, double totalAmount) {
-
+        return null;
     }
 
     public List<PaymentPlanResponse> getAllPaymentPlans() {
