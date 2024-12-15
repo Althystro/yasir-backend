@@ -1,12 +1,12 @@
 package com.example.yasir.Vehicles.controller;
 
 import com.example.yasir.Vehicles.bo.Response.GetAllVehiclesResponse;
+import com.example.yasir.Vehicles.bo.Response.GetCarByIdResponse;
 import com.example.yasir.Vehicles.entity.VehicleEntity;
 import com.example.yasir.Vehicles.service.VehicleService;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 
@@ -34,6 +34,21 @@ public class VehicleController {
             response.setError(e.getMessage());
             return ResponseEntity.internalServerError().body(response);
         }
+    }
+
+    @GetMapping("/{id}")
+    public ResponseEntity<GetCarByIdResponse> getSingleVehicle(@PathVariable Long id){
+        GetCarByIdResponse response = new GetCarByIdResponse();
+        try {
+            VehicleEntity vehicle = vehicleService.getSingleVehicle(id);
+            response.setVehicle(vehicle);
+            return ResponseEntity.ok(response);
+        } catch (Exception e) {
+            response.setError(e.getMessage());
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(response);
+        }
+
+
     }
 
 

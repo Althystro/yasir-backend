@@ -37,6 +37,11 @@ public class VehicleServiceImpl implements VehicleService {
         );
     }
 
+    @Override
+    public VehicleEntity getSingleVehicle(Long id){
+        return vehicleRepository.findById(id).get();
+    }
+
     public void populateVehiclesFromFile(String filePath) {
         try (BufferedReader reader = new BufferedReader(new FileReader(filePath))) {
             StringBuilder fileContent = new StringBuilder();
