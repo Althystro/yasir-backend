@@ -1,5 +1,7 @@
 package com.example.yasir.payments.bo;
 
+import com.example.yasir.payments.enums.PaymentPlanStatus;
+
 public class PaymentPlanResponse {
     private Long paymentPlanId;
     private String customerName;
@@ -8,6 +10,7 @@ public class PaymentPlanResponse {
     private int lengthMonths;
     private double totalAmount;
     private double installmentAmount;
+    private PaymentPlanStatus status;
 
     public Long getPaymentPlanId() {
         return paymentPlanId;
@@ -63,5 +66,13 @@ public class PaymentPlanResponse {
 
     public void setInstallmentAmount(double installmentAmount) {
         this.installmentAmount = installmentAmount;
+    }
+
+    public PaymentPlanStatus getStatus() {
+        return status;
+    }
+
+    public void setStatus(PaymentPlanStatus status) {
+        this.status = status;
     }
 }

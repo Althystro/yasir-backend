@@ -1,11 +1,8 @@
 package com.example.yasir.payments.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
-import java.util.Date;
+import java.time.LocalDateTime;
 
 @Entity
 public class PaymentEntity {
@@ -14,13 +11,17 @@ public class PaymentEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private Date date;
+    private LocalDateTime date;
 
-    public Date getDate() {
+    @ManyToOne
+    @JoinColumn(name = "paymentPlanId", nullable = false)
+    private PaymentPlanEntity paymentPlan;
+
+    public LocalDateTime getDate() {
         return date;
     }
 
-    public void setDate(Date date) {
+    public void setDate(LocalDateTime date) {
         this.date = date;
     }
 
@@ -30,5 +31,13 @@ public class PaymentEntity {
 
     public void setId(Long id) {
         this.id = id;
+    }
+
+    public PaymentPlanEntity getPaymentPlan() {
+        return paymentPlan;
+    }
+
+    public void setPaymentPlan(PaymentPlanEntity paymentPlan) {
+        this.paymentPlan = paymentPlan;
     }
 }

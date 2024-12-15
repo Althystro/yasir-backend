@@ -1,5 +1,8 @@
 package com.example.yasir.payments.entity;
 
+import com.example.yasir.Auth.entity.User;
+import com.example.yasir.Vehicles.entity.VehicleEntity;
+import com.example.yasir.payments.enums.PaymentPlanStatus;
 import jakarta.persistence.*;
 
 import java.util.List;
@@ -9,13 +12,25 @@ public class PaymentPlanEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private Long customerId;
-    private Long vehicleId;
+
+    @Enumerated(EnumType.STRING)
+    @Column(nullable = false)
+    private PaymentPlanStatus status = PaymentPlanStatus.PENDING;
+
+    @ManyToOne
+    @JoinColumn(name = "userId")
+    private User customer;
+
+    @OneToOne
+    @JoinColumn(name = "vehicleId")
+    private VehicleEntity vehicle;
     private int lengthMonths;
     private double amount;
     private double installmentAmount;
 
-    private FinancerEntity to;
+    @ManyToOne
+    @JoinColumn(name = "financerId")
+    private FinancerEntity financerId;
 
     @OneToMany
     private List<PaymentEntity> payments;
@@ -28,20 +43,20 @@ public class PaymentPlanEntity {
         this.id = id;
     }
 
-    public Long getCustomerId() {
-        return customerId;
+    public User getCustomer() {
+        return customer;
     }
 
-    public void setCustomerId(Long customerId) {
-        this.customerId = customerId;
+    public void setCustomer(User customer) {
+        this.customer = customer;
     }
 
-    public Long getVehicleId() {
-        return vehicleId;
+    public VehicleEntity getVehicle() {
+        return vehicle;
     }
 
-    public void setVehicleId(Long vehicleId) {
-        this.vehicleId = vehicleId;
+    public void setVehicle(VehicleEntity vehicle) {
+        this.vehicle = vehicle;
     }
 
     public int getLengthMonths() {
@@ -68,12 +83,12 @@ public class PaymentPlanEntity {
         this.installmentAmount = installmentAmount;
     }
 
-    public FinancerEntity getTo() {
-        return to;
+    public FinancerEntity getFinancerId() {
+        return financerId;
     }
 
-    public void setTo(FinancerEntity to) {
-        this.to = to;
+    public void setFinancerId(FinancerEntity financerId) {
+        this.financerId = financerId;
     }
 
     public List<PaymentEntity> getPayments() {
@@ -82,5 +97,13 @@ public class PaymentPlanEntity {
 
     public void setPayments(List<PaymentEntity> payments) {
         this.payments = payments;
+    }
+
+    public PaymentPlanStatus getStatus() {
+        return status;
+    }
+
+    public void setStatus(PaymentPlanStatus status) {
+        this.status = status;
     }
 }

@@ -7,7 +7,6 @@ public class FinancerEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @OneToMany
     private Long id;
     
     private String name;
