@@ -71,13 +71,17 @@ public class VehicleServiceImpl implements VehicleService {
             String brand = fields[1].split(":")[1];
             String model = fields[2].split(":")[1];
             String year = fields[3].split(":")[1];
-            Double price = Double.parseDouble(fields[4].split(":")[1]);
+            String image = fields[4].split(";")[1];
+            String image2 = fields[5].split(";")[1];
+            Double price = Double.parseDouble(fields[6].split(":")[1]);
 
             VehicleEntity vehicleEntity = new VehicleEntity();
             vehicleEntity.setType(Type.valueOf(type));
             vehicleEntity.setBrand(brand);
             vehicleEntity.setModel(model);
             vehicleEntity.setYear(year);
+            vehicleEntity.setImage(image);
+            vehicleEntity.setImage2(image2);
             vehicleEntity.setPrice(price);
             vehicleRepository.save(vehicleEntity);
 
