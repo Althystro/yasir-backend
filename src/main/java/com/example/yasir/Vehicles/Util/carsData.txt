@@ -2,7 +2,7 @@ Type:Car|
 Brand:Toyota|
 Model:Yaris|
 Year:2024|
-Image;https://images.netdirector.co.uk/gforces-auto/image/upload/w_442,h_295,q_auto,c_fill,f_auto,fl_lossy/auto-client/08265eae37419daa07bdb64973200568/ext4.png|
+Image;https://www.carsized.com/resources/toyota/yaris/s/2022/fa_265000000_toyota-yaris-2022-front-view_4x.png|
 Image2;https://dam.alfuttaim.com/dx/api/dam/v1/collections/993df02a-2bfb-49d0-9e40-677499d5ce97/items/5e81a334-9bc0-4025-ba7f-4c1a997f6fd2/renditions/135d8480-d4ee-441c-b782-fa738dd05ad2?binary=true|
 Price:4900|
 "
@@ -34,7 +34,7 @@ Type:Car|
 Brand:Ford|
 Model:Territory|
 Year:2025|
-Image;https://en.ford.mynaghi.com/storage/ford_common/colors/TERRITORY/exterior/true_blue_metallic/VEC001/001.jpg|
+Image;https://images.netdirector.co.uk/gforces-auto/image/upload/w_318,h_239,q_auto,c_fill,f_auto,fl_lossy/auto-client/bb33c034cae952ef0ef40230f225a8e6/25my_territory_ambaiante.png|
 Image2;https://ymimg1.b8cdn.com/resized/car_model/11638/pictures/13387639/webp_listing_main_2023_Ford_Territory_Exterior_01.webp|
 Price:9500|
 "
@@ -42,7 +42,7 @@ Type:Car|
 Brand:Ford|
 Model:Taurus|
 Year:2025|
-Image;https://www.me.ford.com/content/dam/Ford/sa/nameplate/taurus/models/ambiente/en/colorizer/360/absolute-black/me-ambiente-absolute-black-07.webp|
+Image;https://images.netdirector.co.uk/gforces-auto/image/upload/q_auto,c_fill,f_auto,fl_lossy/auto-client/083f37d51a9fc37a95cd264151220dae/titanium_new.png|
 Image2;https://www.me.ford.com/content/dam/Ford/sa/nameplate/taurus/models/ambiente/en/colorizer/360/absolute-black/me-ambiente-absolute-black-13.webp|
 Price:12000|
 "
@@ -50,7 +50,7 @@ Type:Car|
 Brand:Ford|
 Model:Explorer|
 Year:2025|
-Image;https://www.me.ford.com/content/dam/Ford/sa/nameplate/explorer/models/active/en/colorizer/360/iconic-silver/me-active-iconic-silver-02.webp|
+Image;https://inv.assets.ansira.net/ChromeColorMatch/us/TRANSPARENT_cc_2025FOS100006_01_1280_YZ.png|
 Image2;https://www.me.ford.com/content/dam/Ford/sa/nameplate/explorer/models/active/en/colorizer/360/iconic-silver/me-active-iconic-silver-05.webp|
 Price:17800|
 "
@@ -66,7 +66,7 @@ Type:Car|
 Brand:Mercedes-Benz|
 Model:CLA|
 Year:2025|
-Image;https://shorturl.at/eOYJF|
+Image;https://vehicle-images.dealerinspire.com/stock-images/chrome/0df418414b7c49c07b808fe617e19612.png|
 Image2;https://vehicle-images.dealerinspire.com/stock-images/chrome/f3e63564e9d5b8cb95ceff29de4bdfa7.png|
 Price:18000|
 "
@@ -82,17 +82,17 @@ Type:Car|
 Brand:Mercedes-Benz|
 Model:G-Class|
 Year:2025|
-Image;https://images.hgmsites.net/med/2024-mercedes-benz-g-class-g-550-4matic-suv-front-exterior-view_100928655_m.webp|
+Image;https://vehicle-images.dealerinspire.com/stock-images/chrome/266df998d297bb3084ca16bc8d16f055.png|
 Image2;https://www.carsized.com/resources/mercedes-benz/g/d/2018/sm_325119130_mercedes-benz-g-2018-side-view_4x.png|
 Price:48000|
 "
 Type:Car|
 Brand:Mercedes-Benz|
-Model:A-Class|
-Year:2025|
-Image;https://ymimg1.b8cdn.com/resized/car_model/11440/pictures/13385113/mobile_listing_main_02.jpg|
+Model:GT63|
+Year:2024|
+Image;https://vehicle-images.dealerinspire.com/stock-images/chrome/267b71439ced057c093e480ec6743e88.png|
 Image2;https://www.carsized.com/resources/mercedes-benz/a/d/2018/sl_238116108_mercedes-benz-a-2018-side-view_4x.png|
-Price:15000|
+Price:43000|
 "
 Type:Car|
 Brand:Chevrolet|
@@ -122,7 +122,7 @@ Type:Car|
 Brand:Chevrolet|
 Model:Traverse|
 Year:2024|
-Image;https://i.postimg.cc/sXfnJ8qw/CTF.png|
+Image;https://inv.assets.sincrod.com/ChromeColorMatch/us/TRANSPARENT_cc_2024CHS290001_01_1280_GAZ.png|
 Image2;https://i.postimg.cc/k4jTYsd9/CTS.png|
 Price:13000|
 "
