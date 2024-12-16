@@ -50,7 +50,7 @@ public class VehicleServiceImpl implements VehicleService {
                 fileContent.append(line);
             }
 
-            String[] vehicleEntries = fileContent.toString().split(",");
+            String[] vehicleEntries = fileContent.toString().split("\"");
             for (String entry : vehicleEntries) {
                 VehicleEntity vehicleEntity = parseVehicle(entry);
                 if (vehicleEntity != null) {
