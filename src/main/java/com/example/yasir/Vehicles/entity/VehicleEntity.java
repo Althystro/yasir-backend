@@ -33,6 +33,12 @@ public class VehicleEntity {
     @Column(nullable = false)
     private String image2;
 
+    @Column(nullable = false)
+    private String description;
+
+    @Column(nullable = false)
+    private String engine;
+
     public Long getId() {
         return id;
     }
@@ -95,6 +101,22 @@ public class VehicleEntity {
 
     public void setImage2(String image2) {
         this.image2 = image2;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public String getEngine() {
+        return engine;
+    }
+
+    public void setEngine(String engine) {
+        this.engine = engine;
     }
 
     @Override
