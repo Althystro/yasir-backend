@@ -15,6 +15,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.List;
 import java.util.stream.Collectors;
+import java.util.stream.StreamSupport;
 
 @Service
 public class FinancerServiceImpl implements FinancerService {
@@ -56,6 +57,12 @@ public class FinancerServiceImpl implements FinancerService {
 
         return pendingPlans.stream()
                 .map(this::mapToResponse)
+                .collect(Collectors.toList());
+    }
+
+    @Override
+    public List<FinancerEntity> getAllFinancers() {
+        return StreamSupport.stream(financerRepository.findAll().spliterator(), false)
                 .collect(Collectors.toList());
     }
 

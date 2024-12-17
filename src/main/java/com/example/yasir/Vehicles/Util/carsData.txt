@@ -4,6 +4,8 @@ Model:Yaris|
 Year:2024|
 Image;https://www.carsized.com/resources/toyota/yaris/s/2022/fa_265000000_toyota-yaris-2022-front-view_4x.png|
 Image2;https://dam.alfuttaim.com/dx/api/dam/v1/collections/993df02a-2bfb-49d0-9e40-677499d5ce97/items/5e81a334-9bc0-4025-ba7f-4c1a997f6fd2/renditions/135d8480-d4ee-441c-b782-fa738dd05ad2?binary=true|
+Description: A compact and reliable hatchback perfect for city driving with excellent fuel efficiency and comfort.|
+Engine: 1.5L 4-cylinder engine with 106 hp and CVT transmission.|
 Price:4900|
 "
 Type:Car|
@@ -12,6 +14,8 @@ Model:Corolla|
 Year:2025|
 Image;https://tmna.aemassets.toyota.com/is/image/toyota/toyota/jellies/max/2025/corolla/fx/1870/2ye/36/5.png?fmt=png-alpha&wid=930&qlt=90|
 Image2;https://tmna.aemassets.toyota.com/is/image/toyota/toyota/jellies/max/2025/corolla/fx/1870/2ye/36/11.png?fmt=webp-alpha&wid=930&qlt=90|
+Description: A stylish and efficient sedan known for its safety features, smooth ride, and dependable performance.|
+Engine: 2.0L Dynamic Force engine producing 169 hp with CVT transmission.|
 Price:6000|
 "
 Type:Car|
@@ -20,6 +24,8 @@ Model:Land Cruise|
 Year:2025|
 Image;https://tmna.aemassets.toyota.com/is/image/toyota/toyota/jellies/max/2025/landcruiser/landcruiser/6167/2zc/36/6.png?fmt=webp-alpha&wid=930&qlt=90|
 Image2;https://tmna.aemassets.toyota.com/is/image/toyota/toyota/jellies/max/2025/landcruiser/landcruiser/6167/2zc/36/11.png?fmt=webp-alpha&wid=930&qlt=90|
+Description: A rugged and capable SUV built for off-road adventures and luxurious long-distance drives.|
+Engine: 3.3L V6 twin-turbo diesel engine with 305 hp and 10-speed automatic transmission.|
 Price:21000|
 "
 Type:Car|
@@ -28,6 +34,8 @@ Model:Camry|
 Year:2025|
 Image;https://tmna.aemassets.toyota.com/is/image/toyota/toyota/jellies/max/2025/camry/le/2559/040/36/5.png?fmt=webp-alpha&wid=930&qlt=90|
 Image2;https://tmna.aemassets.toyota.com/is/image/toyota/toyota/jellies/max/2025/camry/le/2559/040/36/10.png?fmt=webp-alpha&wid=930&qlt=90|
+Description: A sleek and refined sedan offering comfort, advanced technology, and superb fuel economy.|
+Engine: 2.5L 4-cylinder engine producing 206 hp paired with an 8-speed automatic transmission.|
 Price:8000|
 "
 Type:Car|
@@ -36,6 +44,8 @@ Model:Territory|
 Year:2025|
 Image;https://images.netdirector.co.uk/gforces-auto/image/upload/w_318,h_239,q_auto,c_fill,f_auto,fl_lossy/auto-client/bb33c034cae952ef0ef40230f225a8e6/25my_territory_ambaiante.png|
 Image2;https://ymimg1.b8cdn.com/resized/car_model/11638/pictures/13387639/webp_listing_main_2023_Ford_Territory_Exterior_01.webp|
+Description: A modern and practical SUV designed for families, with spacious interiors and advanced connectivity.|
+Engine: 1.8L EcoBoost turbocharged engine delivering 187 hp with a 7-speed automatic transmission.|
 Price:9500|
 "
 Type:Car|
@@ -44,6 +54,8 @@ Model:Taurus|
 Year:2025|
 Image;https://images.netdirector.co.uk/gforces-auto/image/upload/q_auto,c_fill,f_auto,fl_lossy/auto-client/083f37d51a9fc37a95cd264151220dae/titanium_new.png|
 Image2;https://www.me.ford.com/content/dam/Ford/sa/nameplate/taurus/models/ambiente/en/colorizer/360/absolute-black/me-ambiente-absolute-black-13.webp|
+Description: A luxury sedan with cutting-edge technology, superior performance, and elegant design.|
+Engine: 2.0L EcoBoost turbocharged engine producing 240 hp with an 8-speed automatic transmission.|
 Price:12000|
 "
 Type:Car|
@@ -52,6 +64,8 @@ Model:Explorer|
 Year:2025|
 Image;https://inv.assets.ansira.net/ChromeColorMatch/us/TRANSPARENT_cc_2025FOS100006_01_1280_YZ.png|
 Image2;https://www.me.ford.com/content/dam/Ford/sa/nameplate/explorer/models/active/en/colorizer/360/iconic-silver/me-active-iconic-silver-05.webp|
+Description: A versatile and powerful SUV offering great towing capacity, advanced safety, and tech features.|
+Engine: 3.0L V6 EcoBoost engine with 400 hp and a 10-speed automatic transmission.|
 Price:17800|
 "
 Type:Car|
@@ -60,6 +74,8 @@ Model:Bronco|
 Year:2024|
 Image;https://autoimage.capitalone.com/stock-media/chrome/2024-Ford-Bronco-Black_Diamond-G4-cc_2024FOS090051_01_2100_G4.png|
 Image2;https://www.billknightauto.com/assets/stock/expanded/transparent/1280/2024fos09_1280/2024fos090024_1280_03.png?timestamp=0001-01-01T00:00:00&bg-color=FFFFFF&width=400%20400w|
+Description: An iconic off-road SUV with unmatched durability and adventure-ready capabilities.|
+Engine: 2.7L EcoBoost V6 engine producing 330 hp with 10-speed automatic transmission.|
 Price:20000|
 "
 Type:Car|
@@ -68,6 +84,8 @@ Model:CLA|
 Year:2025|
 Image;https://vehicle-images.dealerinspire.com/stock-images/chrome/0df418414b7c49c07b808fe617e19612.png|
 Image2;https://vehicle-images.dealerinspire.com/stock-images/chrome/f3e63564e9d5b8cb95ceff29de4bdfa7.png|
+Description: A sporty and elegant luxury sedan with dynamic styling and advanced driver-assistance features.|
+Engine: 2.0L turbocharged inline-4 engine producing 221 hp with 7-speed dual-clutch transmission.|
 Price:18000|
 "
 Type:Car|
@@ -76,6 +94,8 @@ Model:A 45 AMG|
 Year:2025|
 Image;https://www.carsized.com/resources/mercedes-benz/a/d-amg-45/2018/fa_253000000_mercedes-benz-a-2018-front-view_4x.png|
 Image2;https://imgd.aeplcdn.com/664x374/n/cw/ec/106785/exterior-right-side-view.jpeg?isig=0&q=80|
+Description:A high-performance luxury hatchback with sporty design, advanced technology, and AMG-tuned handling.|
+Engine:2.0L Turbocharged Inline-4 producing 416 horsepower.|
 Price:27000|
 "
 Type:Car|
@@ -84,6 +104,8 @@ Model:G-Class|
 Year:2025|
 Image;https://vehicle-images.dealerinspire.com/stock-images/chrome/266df998d297bb3084ca16bc8d16f055.png|
 Image2;https://www.carsized.com/resources/mercedes-benz/g/d/2018/sm_325119130_mercedes-benz-g-2018-side-view_4x.png|
+Description:A rugged and luxurious SUV with iconic boxy design, unmatched off-road capabilities, and high-end interior features.|
+Engine:4.0L V8 Biturbo engine producing 416 horsepower.|
 Price:48000|
 "
 Type:Car|
@@ -92,6 +114,8 @@ Model:GT63|
 Year:2024|
 Image;https://vehicle-images.dealerinspire.com/stock-images/chrome/267b71439ced057c093e480ec6743e88.png|
 Image2;https://www.carsized.com/resources/mercedes-benz/a/d/2018/sl_238116108_mercedes-benz-a-2018-side-view_4x.png|
+Description:An exceptional luxury sports sedan with a powerful twin-turbo V8 engine, designed for high performance and supreme comfort.|
+Engine:4.0L V8 Twin-Turbo engine producing 577 horsepower.|
 Price:43000|
 "
 Type:Car|
@@ -100,6 +124,8 @@ Model:Captiva|
 Year:2025|
 Image;https://www.chevroletarabia.com/content/dam/chevrolet/middle-east/master/english/index/crossovers-and-suvs/2024-captiva/colorizer/new/Aurora-Silver-Metallic.png?imwidth=2400|
 Image2;https://buy.chevroletqatar.com/media/catalog/product/c/h/chevrolet_captiva_1920x9179_exterior_color___aurora_silver_metallic_1.jpg|
+Description:Versatile and spacious, the Chevrolet Captiva is a mid-size crossover SUV designed for family comfort and daily adventures. It offers a balance of performance and efficiency.|
+Engine:2.4L I4 engine producing 171 horsepower.|
 Price:6500|
 "
 Type:Car|
@@ -108,6 +134,8 @@ Model:Tahoe|
 Year:2025|
 Image;https://i.postimg.cc/L8cKNH3v/CCF.png|
 Image2;https://i.postimg.cc/3wX612RJ/CCS.png|
+Description:The Chevrolet Tahoe is a full-size SUV with plenty of room for passengers and cargo. It’s perfect for family road trips and offers advanced technology and safety features.|
+Engine:5.3L V8 engine producing 355 horsepower.|
 Price:18000|
 "
 Type:Car|
@@ -116,6 +144,8 @@ Model:Corvette|
 Year:2024|
 Image;https://cgi.chevrolet.com/mmgprod-us/dynres/prove/image.gen?i=2024/1YC07/1YC07__3LT/GKZ_LT2_M1L_Q8P_GKZ_AH2_HTE_IOK_719gmds11.jpg&v=deg01&std=true&country=US&background=&transparentBackgroundPng=true|
 Image2;https://cgi.chevrolet.com/mmgprod-us/dynres/prove/image.gen?i=2024/1YC07/1YC07__3LT/GKZ_LT2_M1L_Q8P_GKZ_AH2_HTE_IOK_719gmds11.jpg&v=deg02&std=true&country=US&background=&transparentBackgroundPng=true|
+Description:The 2024 Chevrolet Corvette is a high-performance sports car known for its sleek design, powerful engine, and exceptional handling. It features cutting-edge technology and is perfect for those seeking an exhilarating driving experience.|
+Engine:6.2L V8 engine producing 490 horsepower.|
 Price:30000|
 "
 Type:Car|
@@ -124,6 +154,8 @@ Model:Traverse|
 Year:2024|
 Image;https://inv.assets.sincrod.com/ChromeColorMatch/us/TRANSPARENT_cc_2024CHS290001_01_1280_GAZ.png|
 Image2;https://i.postimg.cc/k4jTYsd9/CTS.png|
+Description:The 2024 Chevrolet Traverse is a versatile midsize SUV offering spacious seating for up to eight passengers, advanced safety features, and a smooth driving experience. Perfect for families and long road trips.|
+Engine:3.6L V6 engine producing 310 horsepower.|
 Price:13000|
 "
 Type:Car|
@@ -132,6 +164,8 @@ Model:911 Carrera|
 Year:2025|
 Image;https://images-porsche.imgix.net/-/media/5D0BB7E042BD4C9DBEF84B5E70482520_73AA748306934B0C9CE20E32231DFCE2_CZ25W01IX0011911-carrera-front?w=704&q=45&dpr=2&auto=format|
 Image2;https://images-porsche.imgix.net/-/media/646ED7CDD4DF4060A4823F3A9DB8DA22_97CB2E119D8749C19004EC939CD09E96_CZ25W01IX0010911-carrera-side?w=2400&q=45&crop=faces%2Centropy%2Cedges&auto=format|
+Description:The 2025 Porsche 911 Carrera is an iconic sports car with a blend of high-performance and luxurious features. It is designed for speed, comfort, and precision handling.|
+Engine:3.0L twin-turbocharged flat-six engine producing 379 horsepower.|
 Price:50000|
 "
 Type:Car|
@@ -140,6 +174,8 @@ Model:911 GT3|
 Year:2025|
 Image;https://shorturl.at/0gJ1V|
 Image2;https://images-porsche.imgix.net/-/media/1DBDC37E82084CF496EE48FCCE48BE0A_4D115F6379CF4C299F1F38641CE865F0_911-gt3-side?w=2400&q=45&crop=faces%2Centropy%2Cedges&auto=format|
+Description:The 2025 Porsche 911 GT3 is a high-performance, track-ready sports car that combines exhilarating speed and precision handling. Its aggressive styling and engineering make it a standout in the Porsche 911 lineup.|
+Engine:4.0L naturally aspirated flat-six engine producing 502 horsepower.|
 Price:63000|
 "
 Type:Car|
@@ -148,6 +184,8 @@ Model:Macan|
 Year:2024|
 Image;https://images-porsche.imgix.net/-/media/32FA52EA1F324CD1B577A436AFBBB33A_69A98F22B46A4AF29DBB3CBC8C68E07E_macan-front?w=999&q=85&auto=format|
 Image2;https://images-porsche.imgix.net/-/media/1A69E178D3A4498F80C03853AD613BB8_84A773D467964FDA9D29546FB6315916_macan-side?w=2560&h=811&q=45&crop=faces%2Centropy%2Cedges&auto=format|
+Description:The 2024 Porsche Macan is a luxury compact SUV that blends sporty performance with refined comfort. With its dynamic design and advanced technology, it offers a thrilling driving experience with the practicality of an SUV.|
+Engine:2.0L turbocharged 4-cylinder engine producing 265 horsepower.|
 Price:25000|
 "
 Type:Car|
@@ -156,5 +194,7 @@ Model:Panamera|
 Year:2024|
 Image;https://shorturl.at/LnZgS|
 Image2;https://shorturl.at/oJjKd|
+Description:The 2024 Porsche Panamera offers unmatched luxury and performance in the sports sedan category. It combines elegance with powerful performance, featuring advanced technologies and a refined interior.|
+Engine:3.0L V6 turbocharged engine producing 330 horsepower.|
 Price:40000|
 "
