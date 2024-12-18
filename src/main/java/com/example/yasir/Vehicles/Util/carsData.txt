@@ -43,7 +43,7 @@ Brand:Ford|
 Model:Territory|
 Year:2025|
 Image;https://images.netdirector.co.uk/gforces-auto/image/upload/w_318,h_239,q_auto,c_fill,f_auto,fl_lossy/auto-client/bb33c034cae952ef0ef40230f225a8e6/25my_territory_ambaiante.png|
-Image2;https://ymimg1.b8cdn.com/resized/car_model/11638/pictures/13387639/webp_listing_main_2023_Ford_Territory_Exterior_01.webp|
+Image2;https://i.postimg.cc/8PM8HJnn/mobile-listing-main-2023-Ford-Territory-Exterior-01-removebg-preview.png|
 Description: A modern and practical SUV designed for families, with spacious interiors and advanced connectivity.|
 Engine: 1.8L EcoBoost turbocharged engine delivering 187 hp with a 7-speed automatic transmission.|
 Price:9500|
@@ -53,7 +53,7 @@ Brand:Ford|
 Model:Taurus|
 Year:2025|
 Image;https://images.netdirector.co.uk/gforces-auto/image/upload/q_auto,c_fill,f_auto,fl_lossy/auto-client/083f37d51a9fc37a95cd264151220dae/titanium_new.png|
-Image2;https://www.me.ford.com/content/dam/Ford/sa/nameplate/taurus/models/ambiente/en/colorizer/360/absolute-black/me-ambiente-absolute-black-13.webp|
+Image2;https://i.postimg.cc/cHp9gTZ1/me-ambiente-absolute-black-13-removebg-preview.png|
 Description: A luxury sedan with cutting-edge technology, superior performance, and elegant design.|
 Engine: 2.0L EcoBoost turbocharged engine producing 240 hp with an 8-speed automatic transmission.|
 Price:12000|
@@ -63,7 +63,7 @@ Brand:Ford|
 Model:Explorer|
 Year:2025|
 Image;https://inv.assets.ansira.net/ChromeColorMatch/us/TRANSPARENT_cc_2025FOS100006_01_1280_YZ.png|
-Image2;https://www.me.ford.com/content/dam/Ford/sa/nameplate/explorer/models/active/en/colorizer/360/iconic-silver/me-active-iconic-silver-05.webp|
+Image2;https://i.postimg.cc/dV55mJvx/me-active-oxford-white-05-removebg-preview.png|
 Description: A versatile and powerful SUV offering great towing capacity, advanced safety, and tech features.|
 Engine: 3.0L V6 EcoBoost engine with 400 hp and a 10-speed automatic transmission.|
 Price:17800|
@@ -73,7 +73,7 @@ Brand:Ford|
 Model:Bronco|
 Year:2024|
 Image;https://autoimage.capitalone.com/stock-media/chrome/2024-Ford-Bronco-Black_Diamond-G4-cc_2024FOS090051_01_2100_G4.png|
-Image2;https://www.billknightauto.com/assets/stock/expanded/transparent/1280/2024fos09_1280/2024fos090024_1280_03.png?timestamp=0001-01-01T00:00:00&bg-color=FFFFFF&width=400%20400w|
+Image2;https://images.dealer.com/ddc/vehicles/2024/Ford/Bronco%20Sport/SUV/trim_Big_Bend_73dc2a/perspective/side-left/2024_76.png|
 Description: An iconic off-road SUV with unmatched durability and adventure-ready capabilities.|
 Engine: 2.7L EcoBoost V6 engine producing 330 hp with 10-speed automatic transmission.|
 Price:20000|
@@ -93,7 +93,7 @@ Brand:Mercedes-Benz|
 Model:A 45 AMG|
 Year:2025|
 Image;https://www.carsized.com/resources/mercedes-benz/a/d-amg-45/2018/fa_253000000_mercedes-benz-a-2018-front-view_4x.png|
-Image2;https://imgd.aeplcdn.com/664x374/n/cw/ec/106785/exterior-right-side-view.jpeg?isig=0&q=80|
+Image2;https://i.postimg.cc/5yWgN0q6/exterior-right-side-view-removebg-preview.png|
 Description:A high-performance luxury hatchback with sporty design, advanced technology, and AMG-tuned handling.|
 Engine:2.0L Turbocharged Inline-4 producing 416 horsepower.|
 Price:27000|
@@ -113,7 +113,7 @@ Brand:Mercedes-Benz|
 Model:GT63|
 Year:2024|
 Image;https://vehicle-images.dealerinspire.com/stock-images/chrome/267b71439ced057c093e480ec6743e88.png|
-Image2;https://www.carsized.com/resources/mercedes-benz/a/d/2018/sl_238116108_mercedes-benz-a-2018-side-view_4x.png|
+Image2;https://www.carsized.com/resources/mercedes-benz/amg-gt/c4-63-s/2018/sm_247112171_mercedes-benz-amg-gt-2018-side-view_4x.png|
 Description:An exceptional luxury sports sedan with a powerful twin-turbo V8 engine, designed for high performance and supreme comfort.|
 Engine:4.0L V8 Twin-Turbo engine producing 577 horsepower.|
 Price:43000|
@@ -123,7 +123,7 @@ Brand:Chevrolet|
 Model:Captiva|
 Year:2025|
 Image;https://www.chevroletarabia.com/content/dam/chevrolet/middle-east/master/english/index/crossovers-and-suvs/2024-captiva/colorizer/new/Aurora-Silver-Metallic.png?imwidth=2400|
-Image2;https://buy.chevroletqatar.com/media/catalog/product/c/h/chevrolet_captiva_1920x9179_exterior_color___aurora_silver_metallic_1.jpg|
+Image2;https://i.postimg.cc/Z5sLvjxk/chevrolet-captiva-1920x9179-exterior-color-aurora-silver-metallic-1-removebg-preview.png|
 Description:Versatile and spacious, the Chevrolet Captiva is a mid-size crossover SUV designed for family comfort and daily adventures. It offers a balance of performance and efficiency.|
 Engine:2.4L I4 engine producing 171 horsepower.|
 Price:6500|
@@ -153,7 +153,7 @@ Brand:Chevrolet|
 Model:Traverse|
 Year:2024|
 Image;https://inv.assets.sincrod.com/ChromeColorMatch/us/TRANSPARENT_cc_2024CHS290001_01_1280_GAZ.png|
-Image2;https://i.postimg.cc/k4jTYsd9/CTS.png|
+Image2;https://images.dealer.com/ddc/vehicles/2024/Chevrolet/Traverse/SUV/trim_LS_4c475e/perspective/side-left/2024_24.png|
 Description:The 2024 Chevrolet Traverse is a versatile midsize SUV offering spacious seating for up to eight passengers, advanced safety features, and a smooth driving experience. Perfect for families and long road trips.|
 Engine:3.6L V6 engine producing 310 horsepower.|
 Price:13000|
