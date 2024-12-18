@@ -1,6 +1,5 @@
 package com.example.yasir.payments.service;
 
-import com.example.yasir.Vehicles.entity.VehicleEntity;
 import com.example.yasir.payments.bo.PaymentPlanResponse;
 import com.example.yasir.payments.entity.FinancerEntity;
 import com.example.yasir.payments.entity.PaymentPlanEntity;
@@ -8,7 +7,11 @@ import com.example.yasir.payments.enums.PaymentPlanStatus;
 import com.example.yasir.payments.exceptions.ResourceNotFoundException;
 import com.example.yasir.payments.repository.FinancerRepository;
 import com.example.yasir.payments.repository.PaymentPlanRepository;
+import org.springframework.http.HttpEntity;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.MediaType;
 import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
 
 import java.io.BufferedReader;
 import java.io.FileReader;

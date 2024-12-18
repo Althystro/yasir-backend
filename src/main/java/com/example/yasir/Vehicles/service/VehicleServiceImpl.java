@@ -5,6 +5,7 @@ import com.example.yasir.Vehicles.entity.DealershipEntity;
 import com.example.yasir.Vehicles.repository.DealershipRepository;
 import com.example.yasir.Vehicles.repository.VehicleRepository;
 import com.example.yasir.Vehicles.Util.Type;
+import com.example.yasir.payments.exceptions.ResourceNotFoundException;
 import jakarta.annotation.PostConstruct;
 import org.springframework.stereotype.Service;
 
@@ -12,6 +13,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 import java.util.stream.StreamSupport;
 
@@ -40,6 +42,23 @@ public class VehicleServiceImpl implements VehicleService {
     @Override
     public VehicleEntity getSingleVehicle(Long id){
         return vehicleRepository.findById(id).get();
+    }
+
+    @Override
+    public List<DealershipEntity> getAllDealerships() {
+        return StreamSupport.stream(dealershipRepository.findAll().spliterator(), false)
+                .collect(java.util.stream.Collectors.toList());
+    }
+
+    public DealershipEntity getSingleDealership(Long id) {
+        return dealershipRepository.findById(id).get();
+    }
+
+    @Override
+    public List<VehicleEntity> getVehiclesByDealershipId(Long dealershipId) {
+        DealershipEntity dealership = dealershipRepository.findById(dealershipId)
+                .orElseThrow(() -> new ResourceNotFoundException("Dealership not found with ID: " + dealershipId));
+        return dealership.getVehicles();
     }
 
     public void populateVehiclesFromFile(String filePath) {
